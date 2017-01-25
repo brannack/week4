@@ -30,12 +30,12 @@ window.getDeck = function() {
 // END DO NOT CHANGE CODE
 $(function() {
   $(".deal").on("click", function(event) {
-    var deck = getDeck().shuffle();
+    var hand = getDeck().shuffle();
     event.preventDefault(),
-    $("#c1").attr("src","http://golearntocode.com/images/cards/"+deck[0]+".png"),
-    $("#c2").attr("src","http://golearntocode.com/images/cards/"+deck[1]+".png"),
-    $("#c3").attr("src","http://golearntocode.com/images/cards/"+deck[2]+".png"),
-    $("#c4").attr("src","http://golearntocode.com/images/cards/"+deck[3]+".png"),
-    $("#c5").attr("src","http://golearntocode.com/images/cards/"+deck[4]+".png")
+    $("#c1").attr("src","http://golearntocode.com/images/cards/"+hand[0]+".png"),
+    $("#c2").attr("src","http://golearntocode.com/images/cards/"+hand[1]+".png"),
+    $("#c3").attr("src","http://golearntocode.com/images/cards/"+hand[2]+".png"),
+    $("#c4").attr("src","http://golearntocode.com/images/cards/"+hand[3]+".png"),
+    $("#c5").attr("src","http://golearntocode.com/images/cards/"+hand[4]+".png")
 })
 })
