@@ -30,7 +30,8 @@ window.getDeck = function() {
 // END DO NOT CHANGE CODE
 $(function() {
   $(".deal").on("click", function(event) {
-    var hand = getDeck().shuffle();
+    var currentDeck = getDeck().shuffle();
+    var hand = currentDeck.splice(0,5)
     event.preventDefault(),
     $("#c1").attr("src","http://golearntocode.com/images/cards/"+hand[0]+".png"),
     $("#c2").attr("src","http://golearntocode.com/images/cards/"+hand[1]+".png"),
